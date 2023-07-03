@@ -44,10 +44,10 @@ def calculate_exchange_rate(transaction):
 
 
 def main():
-    invoices_file = 'invoices.csv'
-    transactions_file = 'balance_history.csv'
-    customers_file = 'unified_customers.csv'
-    output_file = 'output.csv'
+    invoices_file = 'input-files/invoices.csv'
+    transactions_file = 'input-files/balance_history.csv'
+    customers_file = 'input-files/unified_customers.csv'
+    output_file = 'output-files/output-2023-06.csv'
 
     customers = read_customers(customers_file)
     invoices = read_invoices(invoices_file)
