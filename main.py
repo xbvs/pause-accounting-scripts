@@ -47,7 +47,7 @@ def main():
     invoices_file = 'input-files/invoices.csv'
     transactions_file = 'input-files/balance_history.csv'
     customers_file = 'input-files/unified_customers.csv'
-    output_file = 'output-files/output-2023-06.csv'
+    output_file = 'output-files/output-2023-07.csv'
 
     customers = read_customers(customers_file)
     invoices = read_invoices(invoices_file)
