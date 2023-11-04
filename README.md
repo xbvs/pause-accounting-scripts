@@ -26,7 +26,7 @@
 
 ### balance_history.csv
 
-1. Go to [https://dashboard.stripe.com/payments](https://dashboard.stripe.com/payments)
+1. Go to [https://dashboard.stripe.com/balance](https://dashboard.stripe.com/balance)
 2. Select "All transactions"
 3. Click "Export"
 4. Select timezone as "GMT+05:30"
