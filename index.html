@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="index.css">
+  <link rel="preload" href="./lib/papaparse-5.4.1.min.js" as="script">
+  <link rel="modulepreload" href="index.js">
 </head>
 <body>
 <h1 id="title">Monthly Accounting Report</h1>
@@ -48,7 +50,8 @@
       <li>Start export</li>
     </ol>
   </div>
-  <form id="survey-form" method="get" action="https://crossorigin.me/https://freecodecamp.com">
+  
+  <form id="report-form">
     <div class="field">
       <div class="label">
         <label for="input-invoices" id="input-invoices-label">Invoices file (invoices.csv):</label>
@@ -77,5 +80,10 @@
     <button id="submit">Submit</button>
   </form>
 </div>
+
+<script src="./lib/papaparse-5.4.1.min.js"></script>
+<script src="index.js" type="module"></script>
 </body>
 </html>
+
+<!--Read file from here https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file-in-the-browser-->
