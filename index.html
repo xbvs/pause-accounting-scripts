@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Pause Accounting Scripts</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<h1 id="title">Monthly Accounting Report</h1>
+<div class="container">
+  <div id="description">
+    <h2>Steps to get input documents:</h2>
+    
+    <h3>Get invoices data (invoices.csv)</h3>
+    <ol>
+      <li>Go to <a href="https://dashboard.stripe.com/invoices">https://dashboard.stripe.com/invoices</a></li>
+      <li>Select "All invoices"</li>
+      <li>Click "Export"</li>
+      <li>Select timezone as "GMT+05:30"</li>
+      <li>Select date-range as custom starting 1st of last month and ending day before today</li>
+      <li>Under columns select "All columns"</li>
+      <li>Start export</li>
+    </ol>
+    
+    <h3>Get customers' data (unified_customers.csv)</h3>
+    <ol>
+      <li>Go to <a href="https://dashboard.stripe.com/customers">https://dashboard.stripe.com/customers</a></li>
+      <li>Select "All customers"</li>
+      <li>Click "Export"</li>
+      <li>Select timezone as "GMT+05:30"</li>
+      <li>Select date-range as "All"</li>
+      <li>Under columns select "All columns"</li>
+      <li>Start export</li>
+    </ol>
+    
+    <h3>Get History of Balances (balance_history.csv)</h3>
+    <ol>
+      <li>Go to <a href="https://dashboard.stripe.com/balance">https://dashboard.stripe.com/balance</a></li>
+      <li>Select "All transactions"</li>
+      <li>Click "Export"</li>
+      <li>Select timezone as "GMT+05:30"</li>
+      <li>Select date-range as "All"</li>
+      <li>Under columns select "All columns"</li>
+      <li>Start export</li>
+    </ol>
+  </div>
+  <form id="survey-form" method="get" action="https://crossorigin.me/https://freecodecamp.com">
+    <div class="field">
+      <div class="label">
+        <label for="input-invoices" id="input-invoices-label">Invoices file (invoices.csv):</label>
+      </div>
+      <div class="field-input">
+        <input autofocus type="file" name="invoices" id="input-invoices" class="input" accept="text/csv" required>
+      </div>
+    </div>
+    <div class="field">
+      <div class="label">
+        <label for="input-customers" id="input-customers-label">Customers file (unified_customers.csv):</label>
+      </div>
+      <div class="field-input">
+        <input autofocus type="file" name="customers" id="input-customers" class="input" accept="text/csv" required>
+      </div>
+    </div>
+    <div class="field">
+      <div class="label">
+        <label for="input-balance" id="input-balance-label">Balance History file (balance_history.csv):</label>
+      </div>
+      <div class="field-input">
+        <input autofocus type="file" name="balance" id="input-balance" class="input" accept="text/csv" required>
+      </div>
+    </div>
+    
+    <button id="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
