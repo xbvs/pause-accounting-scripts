@@ -18,39 +18,47 @@
 <div class="container">
   <div id="description">
     <h2>Steps to get input documents:</h2>
+    <p>Click each section for detailed instructions</p>
     
-    <h3>Get invoices data (invoices.csv)</h3>
-    <ol>
-      <li>Go to <a href="https://dashboard.stripe.com/invoices">https://dashboard.stripe.com/invoices</a></li>
-      <li>Select "All invoices"</li>
-      <li>Click "Export"</li>
-      <li>Select timezone as "GMT+05:30"</li>
-      <li>Select date-range as custom starting 1st of last month and ending day before today</li>
-      <li>Under columns select "All columns"</li>
-      <li>Start export</li>
-    </ol>
+    <details>
+      <summary>Get invoices data (invoices.csv)</summary>
+      <ol>
+        <li>Go to <a href="https://dashboard.stripe.com/invoices">https://dashboard.stripe.com/invoices</a></li>
+        <li>Select "All invoices"</li>
+        <li>Click "Export"</li>
+        <li>Select timezone as "GMT+05:30"</li>
+        <li>Select date-range as custom starting 1st of last month and ending day before today</li>
+        <li>Under columns select "All columns"</li>
+        <li>Start export</li>
+      </ol>
+    </details>
     
-    <h3>Get customers' data (unified_customers.csv)</h3>
-    <ol>
-      <li>Go to <a href="https://dashboard.stripe.com/customers">https://dashboard.stripe.com/customers</a></li>
-      <li>Select "All customers"</li>
-      <li>Click "Export"</li>
-      <li>Select timezone as "GMT+05:30"</li>
-      <li>Select date-range as "All"</li>
-      <li>Under columns select "All columns"</li>
-      <li>Start export</li>
-    </ol>
     
-    <h3>Get History of Balances (balance_history.csv)</h3>
-    <ol>
-      <li>Go to <a href="https://dashboard.stripe.com/balance">https://dashboard.stripe.com/balance</a></li>
-      <li>Select "All transactions"</li>
-      <li>Click "Export"</li>
-      <li>Select timezone as "GMT+05:30"</li>
-      <li>Select date-range as "All"</li>
-      <li>Under columns select "All columns"</li>
-      <li>Start export</li>
-    </ol>
+    <details>
+      <summary>Get customers' data (unified_customers.csv)</summary>
+      <ol>
+        <li>Go to <a href="https://dashboard.stripe.com/customers">https://dashboard.stripe.com/customers</a></li>
+        <li>Select "All customers"</li>
+        <li>Click "Export"</li>
+        <li>Select timezone as "GMT+05:30"</li>
+        <li>Select date-range as "All"</li>
+        <li>Under columns select "All columns"</li>
+        <li>Start export</li>
+      </ol>
+    </details>
+    
+    <details>
+      <summary>Get History of Balances (balance_history.csv)</summary>
+      <ol>
+        <li>Go to <a href="https://dashboard.stripe.com/balance">https://dashboard.stripe.com/balance</a></li>
+        <li>Select "All transactions"</li>
+        <li>Click "Export"</li>
+        <li>Select timezone as "GMT+05:30"</li>
+        <li>Select date-range as "All"</li>
+        <li>Under columns select "All columns"</li>
+        <li>Start export</li>
+      </ol>
+    </details>
   </div>
   
   <form id="report-form">
@@ -87,5 +95,3 @@
 <script src="index.js" type="module"></script>
 </body>
 </html>
-
-<!--Read file from here https://stackoverflow.com/questions/14446447/how-to-read-a-local-text-file-in-the-browser-->
