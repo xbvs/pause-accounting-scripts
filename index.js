@@ -120,10 +120,12 @@ reportForm.addEventListener('submit', async (event) => {
   }
   
   const outputCsv = Papa.unparse(outputs) + '\n';
-  const errorsCsv = Papa.unparse(errors) + '\n';
-  
   downloadFile(outputCsv, 'output.csv');
-  downloadFile(errorsCsv, 'errors.csv');
+
+  if (errors.length > 0) {
+    const errorsCsv = Papa.unparse(errors) + '\n';
+    downloadFile(errorsCsv, 'errors.csv');
+  }
 });
 
 const downloadFile = (contents, fileName) => {
